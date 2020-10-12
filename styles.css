@@ -1,0 +1,168 @@
+/* VARIABLES */
+:root {
+  --col1: #463333;
+  --col2: #835858;
+  --col3: #ebd4d4;
+  --col4: #fff0f0;
+
+  --radius: 10px;
+  --border1: 6px;
+  --border2: 2px;
+  --font: 'Montserrat', sans-serif;
+  --transition: 0s;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--col1);
+}
+
+/* ================== */
+/* TIMER DISPLAY */
+/* ================== */
+.display-timer {
+  border: var(--border1) solid var(--col3);
+  border-radius: var(--radius);
+  background-color: var(--col4);
+  color: var(--col1);
+  font-family: var(--font);
+  display: flex;
+  margin: 1rem;
+  padding: 1rem 1rem;
+}
+
+.time {
+  font-size: 6rem;
+}
+
+.time-label {
+  padding-bottom: 1rem;
+  /* margin-right: 1rem; */
+  font-size: 2rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* .side {
+  width: 5rem;
+  /* border: 1px solid red; */
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* align-items: center; */
+  /* font-size: 4rem; */
+/* } */
+
+/* .remove,
+.delete {
+  width: 5rem;
+  height: 5rem;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border2) solid var(--col3);
+  border-radius: var(--radius);
+  color: var(--col3);
+  background-color: var(--col2);
+  transition: var(--transition);
+} */
+
+/* .remove:hover,
+.delete:hover {
+  cursor: pointer;
+  background: var(--col4);
+  color: var(--col1);
+} */
+
+/* ================== */
+/* BUTTONS */
+/* ================== */
+.btn {
+  font-size: 3rem;
+  padding: .5rem 2rem;
+  font-family: var(--font);
+  background: var(--col2);
+  color: var(--col3);
+  border: var(--border2) solid var(--col3);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: var(--col4);
+  color: var(--col1);
+}
+
+.btn-play {
+  grid-area: play;
+}
+
+.btn-delete {
+  grid-area: delete;
+}
+
+.btn-abate {
+  grid-area: abate;
+}
+
+.btn-0 {
+  grid-area: num0;
+}
+
+.btn-1 {
+  grid-area: num1;
+}
+
+.btn-2 {
+  grid-area: num2;
+}
+
+.btn-3 {
+  grid-area: num3;
+}
+
+.btn-4 {
+  grid-area: num4;
+}
+
+.btn-5 {
+  grid-area: num5;
+}
+
+.btn-6 {
+  grid-area: num6;
+}
+
+.btn-7 {
+  grid-area: num7;
+}
+
+.btn-8 {
+  grid-area: num8;
+}
+
+.btn-9 {
+  grid-area: num9;
+}
+
+.number-buttons {
+  display: grid;
+  grid-template-areas: 
+  "play play play"
+  "delete abate num0"
+  "num1 num2 num3"
+  "num4 num5 num6"
+  "num7 num8 num9";
+};
+
