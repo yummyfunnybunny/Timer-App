@@ -8,9 +8,8 @@
   --radius: 10px;
   --border1: 6px;
   --border2: 2px;
-  --font: 'Montserrat', sans-serif;
+  --font: "Montserrat", sans-serif;
   --transition: 0s;
-  
 }
 
 * {
@@ -43,6 +42,8 @@ body {
 
 .time {
   font-size: 6rem;
+  /* border: 1px solid white; */
+  width: 4rem;
 }
 
 .time-label {
@@ -56,10 +57,10 @@ body {
 /* .side {
   width: 5rem;
   /* border: 1px solid red; */
-  /* display: flex; */
-  /* justify-content: flex-end; */
-  /* align-items: center; */
-  /* font-size: 4rem; */
+/* display: flex; */
+/* justify-content: flex-end; */
+/* align-items: center; */
+/* font-size: 4rem; */
 /* } */
 
 /* .remove,
@@ -89,7 +90,7 @@ body {
 /* ================== */
 .btn {
   font-size: 3rem;
-  padding: .5rem 2rem;
+  padding: 0.5rem 2rem;
   font-family: var(--font);
   background: var(--col2);
   color: var(--col3);
@@ -158,11 +159,14 @@ body {
 
 .number-buttons {
   display: grid;
-  grid-template-areas: 
-  "play play play"
-  "delete abate num0"
-  "num1 num2 num3"
-  "num4 num5 num6"
-  "num7 num8 num9";
-};
+  grid-template-areas:
+    "play play play"
+    "delete abate num0"
+    "num1 num2 num3"
+    "num4 num5 num6"
+    "num7 num8 num9";
+}
 
+.hidden {
+  opacity: 0;
+}
